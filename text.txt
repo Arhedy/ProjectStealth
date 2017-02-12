@@ -1,1 +1,32 @@
-text
+void quicksort (int tab[], int left, int right)
+{
+    int i = left;
+    int j = right;
+    int middle = (left+right)/2;
+    
+	do
+    {
+        while(tab[i]<tab[middle])
+             i++;
+        
+        while(tab[j]>tab[middle])
+             j--;
+        
+        if(i <= j)
+        {
+			int temp = tab[i];
+			tab[i] = tab[j];            
+			tab[j] = temp;	    
+
+            i++;
+            j--;
+        }
+    }
+	while(i<=j);
+    
+    if(left<j) 
+		quicksort(tab, left, j);
+    
+    if(right>i) 
+		quicksort(tab, i, right);    
+}
