@@ -37,6 +37,6 @@ void Main()
 }
 
 
-C++
 Java
-C#
+Scala
+Python
