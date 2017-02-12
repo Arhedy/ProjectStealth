@@ -30,3 +30,8 @@ void quicksort (int tab[], int left, int right)
     if(right>i) 
 		quicksort(tab, i, right);    
 }
+
+void Main()
+{
+	return 0;
+}
